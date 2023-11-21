@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+body{
+    margin: 0%;
+    background-color: rgb(134, 149, 248);
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1300px;
+}
+
+.carrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 30s infinite forwards;
+}
+
+.imagem{
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    width: 290px;
+    height: 187px;
+    background-size: cover;
+    display: flex;
+}
+
+.imagem span{
+    font-size: 1.2em;
+    margin: auto;
+    text-align: center;
+}
+
+@keyframes rotate360 {
+    from{
+        transform: rotateY(0deg);
+    }
+
+    to{
+       transform: rotateY(360deg);         
+    }
+    
+}
+
+.imagem:nth-child(1){
+    background-image: url(https://www.planocritico.com/wp-content/uploads/2021/03/Cinderela-1950.jpg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2){
+    background-image: url(https://m.media-amazon.com/images/I/41+jos8RT2L._AC_SY1000_.jpg);
+    transform: rotateY(40deg) translateZ(430px);
+}
+.imagem:nth-child(3){
+    background-image: url(https://conteudo.imguol.com.br/c/entretenimento/93/2023/08/08/rapunzel-tem-uma-historia-do-seculo-x-como-inspiracao-1691530753314_v2_4x3.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+.imagem:nth-child(4){
+    background-image: url(https://disneyplusbrasil.com.br/wp-content/uploads/2021/12/Branca-de-Neve-Disney-1024x576.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+}
+.imagem:nth-child(5){
+    background-image: url(https://www.giraofertas.com.br/wp-content/uploads/2022/10/Ariel-Castle-Disney-Eau-de-Toilette-Infantil-06.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+.imagem:nth-child(6){
+    background-image: url(https://i.pinimg.com/736x/4f/84/9f/4f849f9769ce22ff312880f136772e3c.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+.imagem:nth-child(7){
+    background-image: url(https://vejasp.abril.com.br/wp-content/uploads/2016/12/abre01151.jpg?quality=70&strip=info&w=600&resize=1200,800);
+    transform: rotateY(240deg) translateZ(430px);
+}
+.imagem:nth-child(8){
+    background-image: url(https://2.bp.blogspot.com/-Ljx6G70AEc8/Ud7LqgjmsjI/AAAAAAAAExg/CZS0RPKp9yc/s1600/Brave-brave-31209519-1035-822.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+}
+.imagem:nth-child(9){
+    background-image: url(https://onlineseries.com.br/wp-content/uploads/2023/03/Anna-Frozen.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+header{
+    text-align: center;
+    font-size: 150%;
+    background-color: rgb(7, 74, 199);
+   font-family: Arial, Helvetica, sans-serif;
+   background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhYq_2W3sP7D99zbUsIZbGO_wSJTWQuDzxFMItuWGw3NirTlfa1QKHu1E7KfHmipKZJQ&usqp=CAU);
+   padding-top: 1px;
+}
+
+footer{ 
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+    left: 45%;
+    
+}
+
+p{
+    position:absolute;
+    bottom:3%;
+    text-align: center;
+    bottom: 5%;
+}
+ 
+
+h1{
+    color: rgb(255, 255, 255);
+}
